@@ -19,6 +19,7 @@ __pycache__/
 
 # Local Minecraft test data
 docker/minecraft/data/
+docker/minecraft/server.local.env
 
 # Local Claude config
 CLAUDE.md

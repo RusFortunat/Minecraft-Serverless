@@ -10,6 +10,12 @@ variable "aws_region" {
   default     = "eu-central-1"
 }
 
+variable "vpc_cidr" {
+  description = "CIDR block for the VPC; subnets are /24s carved from it"
+  type        = string
+  default     = "10.0.0.0/16"
+}
+
 variable "domain_name" {
   description = "Hosted zone domain, e.g. example.com"
   type        = string

@@ -11,5 +11,8 @@ services:
       MEMORY: "3G"
     env_file:
       - server.env
+      # Local-only settings (whitelist), gitignored
+      - path: server.local.env
+        required: false
     volumes:
       - ./data:/data
