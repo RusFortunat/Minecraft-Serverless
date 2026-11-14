@@ -1,0 +1,20 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+*.tfplan
+
+# Lambda build artifacts
+lambda/**/build/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local Minecraft test data
+container/minecraft/data/

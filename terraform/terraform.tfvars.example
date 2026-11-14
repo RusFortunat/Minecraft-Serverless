@@ -1,0 +1,4 @@
+# Copy to terraform.tfvars and fill in
+domain_name      = "example.com"
+server_subdomain = "mc"
+aws_region       = "eu-central-1"

@@ -1,0 +1,15 @@
+# Local testing of the server image before deploying to AWS.
+# Run: docker compose up   -> connect to localhost:25565
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "VANILLA"
+      MEMORY: "3G"
+    env_file:
+      - server.env
+    volumes:
+      - ./data:/data
