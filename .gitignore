@@ -6,6 +6,7 @@
 !*.tfvars.example
 crash.log
 *.tfplan
+terraform/backends/*.hcl
 
 # Lambda build artifacts
 lambda/**/build/
@@ -21,3 +22,6 @@ docker/minecraft/data/
 
 # Local Claude config
 CLAUDE.md
+
+# Sensitive files
+.env

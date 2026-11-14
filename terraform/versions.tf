@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 1.6"
+  required_version = ">= 1.10"
 
   required_providers {
     aws = {
@@ -8,6 +8,10 @@ terraform {
     }
   }
 
-  # TODO: move state to S3 once the basics work
-  # backend "s3" {}
+  # Partial config: bucket, key and region come from backends/<env>.hcl
+  #   terraform init -backend-config=backends/staging.hcl
+  backend "s3" {
+    encrypt      = true
+    use_lockfile = true # S3-native locking, no DynamoDB needed
+  }
 }
