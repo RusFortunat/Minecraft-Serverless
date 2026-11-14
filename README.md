@@ -9,8 +9,8 @@ and starts only when a player resolves the server hostname. See `docs/architectu
 |---|---|
 | `terraform/` | All AWS infrastructure (network, EFS, ECS, Route 53, Lambda, IAM) |
 | `lambda/launcher/` | Lambda that starts the ECS service on a DNS query |
-| `container/minecraft/` | Server config + docker-compose for local testing |
-| `container/watchdog/` | Sidecar: updates DNS on start, shuts down when idle |
+| `docker/minecraft/` | Server config + docker-compose for local testing |
+| `docker/watchdog/` | Sidecar: updates DNS on start, shuts down when idle |
 | `docs/` | Architecture notes |
 
 ## Prerequisites

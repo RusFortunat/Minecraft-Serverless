@@ -17,4 +17,7 @@ __pycache__/
 .venv/
 
 # Local Minecraft test data
-container/minecraft/data/
+docker/minecraft/data/
+
+# Local Claude config
+CLAUDE.md
