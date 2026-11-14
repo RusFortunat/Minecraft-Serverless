@@ -33,6 +33,12 @@ variable "minecraft_image" {
   default     = "itzg/minecraft-server:latest"
 }
 
+variable "minecraft_whitelist" {
+  description = "Java player names allowed to join; empty disables the whitelist. Set in terraform.tfvars (gitignored)."
+  type        = list(string)
+  default     = []
+}
+
 variable "task_cpu" {
   type    = number
   default = 1024

@@ -2,3 +2,6 @@
 domain_name      = "example.com"
 server_subdomain = "mc"
 aws_region       = "eu-central-1"
+
+# Java profile names, not Microsoft/Xbox gamertags
+minecraft_whitelist = ["YourJavaName"]
